@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/find_pw_id_button"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/find_pw_id_button" />
+
+        <Button
+            android:id="@+id/find_pw_pw_button"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/find_pw_pw_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/find_border"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginBottom="25dp"
+                app:srcCompat="@drawable/login_id_icon" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="45dp"
+                app:srcCompat="@drawable/login_call" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="-15dp"
+                app:srcCompat="@drawable/login_car" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/login_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/find_pw_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:hint="아이디 입력" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/login_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/find_pw_phoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:hint="'-' 없이 입력" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-10dp"
+                android:background="@drawable/login_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/find_pw_carNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:hint="공백 없이 입력" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/find_pw_submit_button"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/submit_button"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

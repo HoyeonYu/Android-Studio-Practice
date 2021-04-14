@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trafficInfo"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="실시간 교통 정보" />
+        <item
+            android:id="@+id/nav_sendStatus"
+            android:icon="@drawable/ic_menu_share"
+            android:title="실시간 상태 전송" />
+        <item
+            android:id="@+id/nav_emergencyManual"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="긴급 상황 메뉴얼" />
+        <item
+            android:id="@+id/nav_healthInfo"
+            android:icon="@drawable/nav_icon_health"
+            android:title="당신을 위한 건강 소식" />
+    </group>
+
+</menu>

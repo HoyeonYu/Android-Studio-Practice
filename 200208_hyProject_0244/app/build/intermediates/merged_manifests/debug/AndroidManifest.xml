@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a200116_hyproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="29" />
+
+    <!-- Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- location permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Phone Call permission -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- SMS permission -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Alarm permission -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- Include required permissions for Google Maps API to run. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- Login Page -->
+        <activity
+            android:name="com.example.a200116_hyproject.LoginActivity"
+            android:label="환영합니다!"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Page -->
+        <activity
+            android:name="com.example.a200116_hyproject.RegisterActivity"
+            android:label="등록하기"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <!-- Find ID Page -->
+        <activity
+            android:name="com.example.a200116_hyproject.FindIDActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <!-- Find PW Page -->
+        <activity
+            android:name="com.example.a200116_hyproject.FindPWActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <!-- Main Page -->
+        <activity
+            android:name="com.example.a200116_hyproject.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <!-- Current Position Page -->
+        <activity android:name="com.example.a200116_hyproject.CurPosActivity" >
+        </activity>
+
+        <!-- Alarm Page -->
+        <activity
+            android:name="com.example.a200116_hyproject.AlarmActivity"
+            android:label="시간을 설정해 주세요"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <receiver android:name="com.example.a200116_hyproject.AlarmReceiver" />
+
+        <service
+            android:name="com.example.a200116_hyproject.RingtoneService"
+            android:enabled="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA9YyT9lQIL2MARUVwlIIG7UxRv_n0J35o" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

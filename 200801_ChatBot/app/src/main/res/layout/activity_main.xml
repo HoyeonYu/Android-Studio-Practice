@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatbot_background_gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bottom_menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:foregroundGravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bottom_menu_bar" />
+
+    <TextView
+        android:id="@+id/chatbot_info_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아직 계획이 없으신가요?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/chatbot_info_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI 챗봇을 통해 추천받아보세요!"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatbot_info_txt1"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <ImageView
+        android:id="@+id/chatbot_icon"
+        android:layout_width="83dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatbot_info_txt2"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/chatbot_icon" />
+
+    <ImageView
+        android:id="@+id/chatbot_edittext_background"
+        android:layout_width="286dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_menu_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/chatbot_text_edittext_backgound" />
+
+    <EditText
+        android:id="@+id/chatbot_send_edittext"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="챗봇과 대화하기"
+        android:inputType="textPersonName"
+        android:textColorHint="#80000000"
+        app:layout_constraintBottom_toBottomOf="@+id/chatbot_edittext_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chatbot_edittext_background"
+        app:layout_constraintVertical_bias="0.71000004" />
+
+    <Button
+        android:id="@+id/chatbot_send_button"
+        android:layout_width="74dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FFD180"
+        android:onClick="onButtonClicked_SendButton"
+        android:text="전송"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_menu_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chatbot_edittext_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <ImageView
+        android:id="@+id/chatbot_text_background"
+        android:layout_width="267dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toEndOf="@+id/chatbot_icon"
+        app:layout_constraintTop_toBottomOf="@+id/chatbot_info_txt2"
+        app:layout_constraintVertical_bias="0.04000002"
+        app:srcCompat="@drawable/chatbot_text_background" />
+
+    <TextView
+        android:id="@+id/chatbot_info_init_txt"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요.\n사용자 맞춤 여행 추천봇 AI입니다.\n질문에 대답해주시면 결과를 분석해 맞는 여행지를 추천해드립니다.\n\n평소 선호하는 여행 분위기를 골라주세요.\n\nA. 잔잔한 휴양지 여행\nB. 시끌벅적한 시내 여행\nC. A와 B 모두 선호함"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/chatbot_text_background"
+        app:layout_constraintEnd_toEndOf="@+id/chatbot_text_background"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/chatbot_text_background"
+        app:layout_constraintTop_toTopOf="@+id/chatbot_text_background"
+        app:layout_constraintVertical_bias="0.457" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">mapPractice</string>
+    <string name="map_key" translatable="false">AIzaSyA9YyT9lQIL2MARUVwlIIG7UxRv_n0J35o</string>
+
+</resources>

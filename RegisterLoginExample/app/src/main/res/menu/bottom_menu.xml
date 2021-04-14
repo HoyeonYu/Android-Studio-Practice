@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_a"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_house_24"
+        android:title="Apple"/>
+
+    <item
+        android:id="@+id/action_b"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_local_post_office_24"
+        android:title="Bee"/>
+
+    <item
+        android:id="@+id/action_c"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="Circle"/>
+
+    <item
+        android:id="@+id/action_d"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="Depart"/>
+
+    <item
+        android:id="@+id/action_mypage"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_group_24"
+        android:title="Mypage"/>
+</menu>
